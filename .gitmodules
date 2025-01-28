@@ -3,3 +3,8 @@
 	url = /lustre03/project/rrg-pbellec/ria-beluga/alias/repronim/containers
 	datalad-id = b02e63c2-62c1-11e9-82b0-52540040489c
 	datalad-url = "ria+file:///lustre03/project/rrg-pbellec/ria-beluga#~repronim/containers"
+[submodule "sourcedata/shinobi"]
+	path = sourcedata/shinobi
+	url = /lustre03/project/rrg-pbellec/ria-beluga/alias/cneuromod.shinobi.raw
+	datalad-id = 3ee55e10-f8f6-11ea-83ca-3ea8d101da1a
+	datalad-url = "ria+file:///lustre03/project/rrg-pbellec/ria-beluga#~cneuromod.shinobi.raw"
