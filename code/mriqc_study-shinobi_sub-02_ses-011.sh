@@ -3,7 +3,7 @@
 #SBATCH --job-name=mriqc_study-shinobi_sub-02_ses-011.job
 #SBATCH --output=./code/mriqc_study-shinobi_sub-02_ses-011.out
 #SBATCH --error=./code/mriqc_study-shinobi_sub-02_ses-011.err
-#SBATCH --time=8:00:00
+#SBATCH --time=2:00:00
 #SBATCH --cpus-per-task=8
 #SBATCH --mem-per-cpu=4G
 #SBATCH --mail-type=BEGIN
@@ -14,7 +14,7 @@
 
 
 export LOCAL_DATASET=$SLURM_TMPDIR/${SLURM_JOB_NAME//-/}/
-flock --verbose /lustre03/project/rrg-pbellec/ria-beluga/alias/cneuromod.shinobi.mriqc/.datalad_lock datalad clone ria+file:///lustre03/project/rrg-pbellec/ria-beluga/alias/cneuromod.shinobi.mriqc/ $LOCAL_DATASET
+flock --verbose /lustre03/project/rrg-pbellec/ria-beluga/alias/cneuromod.shinobi.mriqc/.datalad_lock datalad clone ria+file:///lustre03/project/rrg-pbellec/ria-beluga#~cneuromod.shinobi.mriqc $LOCAL_DATASET
 cd $LOCAL_DATASET
 git-annex enableremote ria-beluga-storage
 datalad get -s ria-beluga-storage -J 4 -n -r -R1 . # get sourcedata/* containers
