@@ -1,0 +1,85 @@
+[environment]
+cache_path = "PosixPath('/home/mriqc/.cache/mriqc')"
+cpu_count = 40
+exec_env = "singularity"
+free_mem = 45.2
+freesurfer_home = "/opt/freesurfer"
+overcommit_policy = "heuristic"
+overcommit_limit = "50%"
+nipype_version = "1.8.6"
+synthstrip_path = "PosixPath('/opt/freesurfer/models/synthstrip.1.pt')"
+templateflow_version = "24.2.0"
+total_memory = 93.02938842773438
+version = "24.1.0.dev0+gd5b13cb5.d20240826"
+
+[execution]
+ants_float = false
+bids_dir = "/localscratch/bpinsard.53835086.0/mriqc_studyshinobi_sub01_ses004.job/sourcedata/shinobi"
+bids_dir_datalad = false
+bids_database_dir = "/localscratch/bpinsard.53835086.0/mriqc_studyshinobi_sub01_ses004.job/workdir/.bids_db-20250216-213036_1411a081-6e6a-48cf-bd7b-fb1d55507a95"
+bids_database_wipe = false
+cwd = "/localscratch/bpinsard.53835086.0/mriqc_studyshinobi_sub01_ses004.job"
+datalad_get = false
+debug = false
+dry_run = false
+dsname = "<unset>"
+float32 = true
+layout = "BIDS Layout: /localscratch/bpinsard.53835086.0/mriqc_studyshinobi_sub01_ses004.job/sourcedata/shinobi"
+log_dir = "/localscratch/bpinsard.53835086.0/mriqc_studyshinobi_sub01_ses004.job/logs"
+log_level = 25
+modalities = [ "bold",]
+no_sub = true
+notrack = false
+output_dir = "/localscratch/bpinsard.53835086.0/mriqc_studyshinobi_sub01_ses004.job"
+participant_label = [ "01",]
+pdb = false
+reports_only = false
+resource_monitor = false
+run_uuid = "20250216-213036_1411a081-6e6a-48cf-bd7b-fb1d55507a95"
+session_id = [ "004",]
+templateflow_home = "/templateflow"
+upload_strict = false
+verbose_reports = false
+webapi_url = "https://mriqc.nimh.nih.gov:443/api/v1"
+work_dir = "/localscratch/bpinsard.53835086.0/mriqc_studyshinobi_sub01_ses004.job/workdir"
+write_graph = false
+
+[workflow]
+analysis_level = [ "participant",]
+deoblique = false
+despike = false
+fd_thres = 0.2
+fd_radius = 50
+fft_spikes_detector = false
+inputs_path = "PosixPath('/localscratch/bpinsard.53835086.0/mriqc_studyshinobi_sub01_ses004.job/workdir/inputs-20250216-213036_1411a081-6e6a-48cf-bd7b-fb1d55507a95.pkl')"
+min_len_dwi = 7
+min_len_bold = 5
+species = "human"
+template_id = "MNI152NLin2009cAsym"
+
+[nipype]
+crashfile_format = "txt"
+get_linked_libs = false
+local_hash_check = true
+memory_gb = 32
+nprocs = 8
+omp_nthreads = 8
+plugin = "MultiProc"
+remove_node_directories = false
+resource_monitor = false
+stop_on_first_crash = true
+
+[settings]
+file_path = "/localscratch/bpinsard.53835086.0/mriqc_studyshinobi_sub01_ses004.job/logs/config-20250216-213036_1411a081-6e6a-48cf-bd7b-fb1d55507a95.toml"
+start_time = 1739741436.481156
+
+[execution.bids_filters]
+
+[workflow.biggest_file_gb]
+bold = 0.467561736702919
+
+[nipype.plugin_args]
+maxtasksperchild = 1
+raise_insufficient = false
+n_procs = 8
+memory_gb = 32.0
